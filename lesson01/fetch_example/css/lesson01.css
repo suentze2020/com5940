@@ -1,0 +1,125 @@
+/******************** */
+/*     Lesson 1       */
+/******************** */
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+main {
+  background: url("https://getmdl.io/assets/demos/transparent.jpg") center /
+    cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: honeydew;
+  text-shadow: 2px 2px black;
+}
+
+.mdl-layout__header-row {
+  background-color: #217384;
+}
+
+.mdl-layout__drawer-button {
+  background-color: #03385f !important;
+}
+
+header {
+  position: fixed;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #217384;
+  text-align: center;
+}
+
+.mdl-tabs__tab {
+  color: white;
+}
+
+.mdl-tabs__tab.is-active {
+  color: orange !important;
+}
+
+.mdl-tabs__tab-bar {
+  height: 56px;
+}
+
+.mdl-tabs__panel {
+  padding: 10%;
+}
+
+/******************** */
+/* Pre-class Workshop */
+/******************** */
+
+/* main {
+  background: url("https://getmdl.io/assets/demos/transparent.jpg") center /
+    cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: honeydew;
+  text-shadow: 2px 2px black;
+}
+
+.mdl-layout__header-row {
+  background-color: #217384;
+}
+
+.mdl-layout__drawer-button {
+  background-color: #03385f !important;
+} */
+
+/* #firstLine {
+  color: darkblue;
+}
+
+.alert {
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: silver;
+} */
+
+@media only screen and (max-width: 600px) {
+  main {
+    /* background: url("https://getmdl.io/assets/demos/transparent.jpg") center /
+      cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: honeydew;
+    text-shadow: 2px 2px black; */
+    margin-top: 10%;
+  }
+}
