@@ -1,11 +1,11 @@
 var CACHE_NAME = "v2";
 var urlsToCache = [
-  "/lesson01/fetch_example",
-  "/lesson01/fetch_example/lesson01.html",
-  "/lesson01/fetch_example/css/lesson01.css",
-  "/lesson01/fetch_example/js/lesson01.js",
-  "/lesson01/fetch_example/js/main.js",
-  "/lesson01/fetch_example/js/module.js",
+  "/com5940/lesson01/fetch_example",
+  "/com5940/lesson01/fetch_example/lesson01.html",
+  "/com5940/lesson01/fetch_example/css/lesson01.css",
+  "/com5940/lesson01/fetch_example/js/lesson01.js",
+  "/com5940/lesson01/fetch_example/js/main.js",
+  "/com5940/lesson01/fetch_example/js/module.js",
 ];
 
 self.addEventListener("install", function (event) {
