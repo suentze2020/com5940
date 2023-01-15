@@ -1,0 +1,238 @@
+{
+	"variables": [],
+	"info": {
+		"name": "01 2023 com5940 lesson 1 localhost 9028",
+		"_postman_id": "fb61c111-b697-4e62-91d1-07fa1a4c2318",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9028/api/register",
+			"request": {
+				"url": "http://localhost:9028/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"mary\", \"password\":\"password\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/api/login",
+			"request": {
+				"url": "http://localhost:9028/api/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bWFyeTpwYXNzd29yZA==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/todo",
+			"request": {
+				"url": "http://localhost:9028/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjEzNjEyfQ.lWobSNSt1QlWj-O33IA6x7HNa3EzfYWRDsL9DZB7sGw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic SnVzdGluOnBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/user/<id>",
+			"request": {
+				"url": "http://localhost:9028/api/user/6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjEzNjEyfQ.lWobSNSt1QlWj-O33IA6x7HNa3EzfYWRDsL9DZB7sGw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic SnVzdGluOnBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9018/api/todo",
+			"request": {
+				"url": "http://localhost:9028/api/todo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NywiZXhwIjoxNjczMjE4MzI1fQ.xLIurriVfushGx18gbpENZekcqWHUDukY5PPUCCVeuY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\":\"Clean the appartment.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/todo/<id>",
+			"request": {
+				"url": "http://localhost:9028/api/todo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjEzNjEyfQ.lWobSNSt1QlWj-O33IA6x7HNa3EzfYWRDsL9DZB7sGw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic SnVzdGluOnBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/todo",
+			"request": {
+				"url": "http://localhost:9028/api/todo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjE4NjY4fQ.8oly83X1tiUD_DsAAOy_i2Zr1WaRHBUEev4kclv-jeQ",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic SnVzdGluOnBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/todo/<id>",
+			"request": {
+				"url": "http://localhost:9028/api/todo/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjEzNjEyfQ.lWobSNSt1QlWj-O33IA6x7HNa3EzfYWRDsL9DZB7sGw",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic SnVzdGluOnBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"complete\": false\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9028/api/todo/1",
+			"request": {
+				"url": "http://localhost:9028/api/todo/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZXhwIjoxNjczMjE4NjY4fQ.8oly83X1tiUD_DsAAOy_i2Zr1WaRHBUEev4kclv-jeQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

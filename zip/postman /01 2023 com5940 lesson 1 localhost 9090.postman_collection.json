@@ -1,0 +1,50 @@
+{
+	"variables": [],
+	"info": {
+		"name": "01 2023 com5940 lesson 1 localhost 9090",
+		"_postman_id": "d01498b5-21ea-38c1-8391-8dd5d7b910f8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/blogs",
+			"request": {
+				"url": "http://localhost:9090/api/blogs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/login",
+			"request": {
+				"url": "http://localhost:9090/api/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

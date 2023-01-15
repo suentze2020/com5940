@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "01 2023 com5940 lesson 1 localhost 9020",
+		"_postman_id": "45906036-10fc-b056-8d41-378c4eff5f74",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9020/api/read",
+			"request": {
+				"url": "http://localhost:9020/api",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9020/api/readHello",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9020/api/readHello?method=GET&param=Got your GET parameter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9020",
+					"path": [
+						"api",
+						"readHello"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "GET",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "param",
+							"value": "Got your GET parameter",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9020/api/createHello",
+			"request": {
+				"url": "http://localhost:9020/api/createHello",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"POST\", \"body\":\"Here is the POST request\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9020/api/updateHello",
+			"request": {
+				"url": "http://localhost:9020/api/updateHello",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"PUT\", \"body\":\"Here is the PUT request\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9020/api/deleteHello",
+			"request": {
+				"url": "http://localhost:9020/api/deleteHello",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
