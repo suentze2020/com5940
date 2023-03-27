@@ -12,6 +12,8 @@
       src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
     ></script>
     <script type="text/javascript">
+      var lat_val = 0;
+      var long_val = 0;
       function initGeolocation() {
         if (navigator.geolocation) {
           // Call getCurrentPosition with success and failure callbacks
@@ -24,11 +26,15 @@
       function success(position) {
         document.getElementById("long").value = position.coords.longitude;
         document.getElementById("lat").value = position.coords.latitude;
+        lat_val = position.coords.latitude;
+        long_val = position.coords.longitude;
+        console.log('lat_val=',lat_val);
+        console.log('long_val=',long_val);
       }
 
       function fail() {
         // Could not obtain location
-      }
+      }   
     </script>
   </head>
     <body onLoad="initGeolocation();"
@@ -45,9 +51,10 @@
       <a-entity
         material="color: red"
         geometry="primitive: box"
-        gps-new-entity-place="latitude: `${'lat'}`; longitude: `${'long'}` "
+        gps-new-entity-place="latitude: `${window.lat_val}`; longitude: `${window.long_val}` "
         scale="10 10 10"
       ></a-entity>
     </a-scene>
   </body>
+
 </html>
